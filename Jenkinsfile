@@ -37,7 +37,7 @@ pipeline {
 	  post {
 	  always {
 	  sh 'pkill -f "node app.js" || true'
-	  archiveArtifacts artifacts; 'app.log' allowEmptyArchive:true
+	  archiveArtifacts artifacts: 'dist/**, logs/**'
 	  }
 	  success {
 	   echo 'Build and local deployment succeeded'
