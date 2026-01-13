@@ -41,7 +41,7 @@ pipeline {
 	  }
 	  success {
 	   echo 'Build and local deployment succeeded'
-	  {
+	  }
 	  failure {
 	   echo 'Build or deployment failed'
 	   }
